@@ -1,0 +1,71 @@
+// font-family
+$content: 'content', sans-serif;
+$title: 'title', sans-serif;
+$focus: 'focus', sans-serif;
+
+@font-face {
+  font-family: 'content';
+  src: url('../fonts/content.woff2') format('woff2'),
+    url('../fonts/content.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('../fonts/title.woff2') format('woff2'),
+    url('../fonts/title.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'focus';
+  src: url('../fonts/focus.woff2') format('woff2'),
+    url('../fonts/focus.woff') format('woff');
+}
+
+// font-sizes
+$text-xs: 1.1rem;
+$text-sm: 1.4rem;
+$text-base: 1.6rem;
+$text-lg: 1.8rem;
+$text-xl: 2rem;
+$text-2xl: 2.4rem;
+$text-3xl: 3rem;
+$text-4xl: 4rem;
+$text-5xl: 4.8rem;
+
+// colors
+$default: #222;
+$black: #000;
+$white: #fff;
+$background: #020203;
+$success: #00FF00;
+$warning: #FFA500;
+$alert: #D94352;
+
+// weight
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
+
+// outline
+$outline: #4A90E2;
+$outline-full: -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
+
+// border radius
+$rounded-none: 0px;
+$rounded-sm: 2px;
+$rounded: 4px;
+$rounded-md: 6px;
+$rounded-lg: 8px;
+$rounded-xl: 12px;
+$rounded-2xl: 16px;
+$rounded-3xl: 24px;
+$rounded-full: 100%;

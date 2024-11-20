@@ -1,0 +1,35 @@
+{
+  "name": "gulp-sass-boilerplate",
+  "version": "1.0.0",
+  "author": "Lucas Jones",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "run_svgo": "node run.js run_svgo",
+    "run_sharp": "node run.js run_sharp",
+    "run_fonts": "node run.js run_fonts",
+    "run_help": "node run.js run_help"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.9",
+    "@babel/preset-env": "^7.24.8",
+    "browser-sync": "^3.0.3",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-html-minifier-terser": "^7.1.0",
+    "gulp-purgecss": "^6.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-wrap": "^0.15.0",
+    "lighthouse": "^12.2.2",
+    "sass": "^1.81.0",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "ttf2woff": "^3.0.0",
+    "ttf2woff2": "^6.0.1"
+  }
+}

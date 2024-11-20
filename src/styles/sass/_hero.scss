@@ -1,0 +1,166 @@
+@use './variables' as *;
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: radial-gradient(circle, #250C67 10%, #250C67 40%, #190944 60%, black 90%);
+
+  .banner-superior {
+    background-color: red;
+    width: 100%;
+    color: $black;
+    text-transform: uppercase;
+    font-family: $title;
+    font-size: $text-2xl;
+    font-weight: $font-medium;
+    padding: 8px;
+
+    span {
+      font-weight: $font-extrabold;
+    }
+
+    @media(max-width:1000px) {
+      font-size: $text-xl;
+    }
+
+    @media(max-width:800px) {
+      font-size: $text-lg;
+    }
+
+    @media(max-width:800px) {
+      font-size: $text-base;
+    }
+
+    @media(max-width:650px) {
+      font-size: $text-sm;
+    }
+
+    @media(max-width:550px) {
+      padding: 4px;
+      font-size: $text-xs;
+
+      span {
+        display: block;
+      }
+    }
+
+  }
+
+  .titulo {
+    margin: 24px 0;
+    padding: 0 16px;
+    font-family: $title;
+    max-width: 1000px;
+    font-size: $text-4xl;
+    font-weight: $font-medium;
+
+    span {
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+
+    @media(max-width:900px) {
+      font-size: $text-3xl;
+    }
+
+    @media(max-width:700px) {
+      font-size: $text-2xl;
+    }
+  }
+
+  .subtitulo {
+    max-width: 850px;
+    padding: 0 16px;
+    font-size: $text-2xl;
+    font-weight: $font-normal;
+
+    @media(max-width:900px) {
+      font-size: $text-2xl;
+    }
+
+    @media(max-width:700px) {
+      font-size: $text-xl;
+    }
+  }
+
+  .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+
+    picture {
+      margin: 24px auto;
+      max-width: 650px;
+      filter: brightness(0.8);
+      transition: filter 0.2s ease;
+      position: relative;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+      &:hover {
+        filter: brightness(1);
+      }
+    }
+  }
+
+  #btn-sim {
+    background: linear-gradient(270deg, #00BCD4 3.92%, #40E0D0 51.48%, #00BCD4 105.82%);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+    border-color: #1bd1f1;
+    color: $black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin: 16px 0;
+
+
+    &:hover {
+      outline: 2px solid rgba(0, 255, 255, 0.5);
+    }
+
+    @media(max-width:650px) {
+      width: auto;
+      padding: 8px 16px;
+    }
+  }
+
+  .link-ultima-chamada {
+    font-size: $text-2xl;
+    margin-top: 8px;
+    text-decoration: underline;
+    color: $white;
+    font-size: $text-lg;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-bottom: 32px;
+
+    @media(max-width: 700px) {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+
+// animation: bounce 1s infinite ease-in-out;
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
